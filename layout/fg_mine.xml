@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/tophead"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:background="@color/theme"/>
+    <ImageView
+        android:id="@+id/Head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/ic_account_circle_black_24dp"/>
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请登录"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_below="@id/Head"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        style="@style/wrap_layout"
+        >
+        <!-- 上圆角-->
+
+        <LinearLayout
+            android:id="@+id/Person_data"
+            style="@style/top_layout">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_folder_special_black_24dp" />
+
+            <TextView
+                style="@style/usertext"
+                android:text="@string/pt1"/>
+
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+
+        <!-- 分割线 -->
+        <View
+            style="@style/bg_line"
+            android:layout_height="1dp"/>
+        <!-- 无圆角-->
+        <LinearLayout style="@style/mid_layout"
+            android:id="@+id/My_post">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_file_upload_black_24dp"
+                />
+
+            <TextView
+                style="@style/usertext"
+                android:text="@string/pt2"/>
+
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+
+        <!-- 分割线 -->
+        <View
+            style="@style/bg_line"
+            android:layout_height="1dp"/>     <!-- 分割线 -->
+
+        <!-- 无圆角-->
+
+        <LinearLayout
+            android:id="@+id/Notification"
+            style="@style/mid_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_person_red_24dp" />
+
+            <TextView
+                style="@style/usertext"
+                android:text="@string/pt3" />
+
+            <ImageView
+                style="@style/img_arrow" />
+        </LinearLayout>
+
+        <View
+            style="@style/bg_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:id="@+id/Feedback"
+            style="@style/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_vpn_key_black_24dp" />
+
+            <TextView
+                style="@style/usertext"
+                android:text="@string/pt4" />
+
+            <ImageView
+                style="@style/img_arrow" />
+
+        </LinearLayout>
+        <View
+            style="@style/bg_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

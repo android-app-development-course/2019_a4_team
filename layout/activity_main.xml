@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--底部tab栏-->
+    <RadioGroup
+        android:id="@+id/Home_tab"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+        <!--为每个tab的图片和文字设置选择器-->
+
+        <RadioButton
+            android:id="@+id/Tab_groupinfo"
+            style="@style/HomeTabButton"
+            android:text="组队信息"
+            android:drawableTop="@drawable/tab_groupinfo_selector"/>
+
+        <RadioButton
+            android:id="@+id/tab_postinfo"
+            style="@style/HomeTabButton"
+            android:text="发布信息"
+            android:drawableTop="@drawable/tab_postinfo_selector"/>
+
+        <RadioButton
+            android:id="@+id/tab_my"
+            style="@style/HomeTabButton"
+            android:text="我的信息"
+            android:drawableTop="@drawable/tab_my_selector"/>
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/home_container"
+        android:layout_width="match_parent"
+        android:layout_height="580dp" />
+</RelativeLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_detail"/>
+    <RelativeLayout
+        android:layout_below="@id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/GroupDetail">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/img3"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="#00000000"
+            android:src="@drawable/ic_star1" />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/image1"
+            android:layout_marginBottom="12dp"
+            android:layout_alignRight="@+id/image1"
+            android:textColor="#99FFFFFF"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:textSize="26dp"
+            android:text="实验室"/>
+        <LinearLayout
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/image1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_name_24dp"
+                android:layout_marginLeft="6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="华南师范大学人工智能实验室"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/address"
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/name">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_place_24dp"
+                android:layout_marginLeft="6dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="广州市天河区华南师范大学" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:id="@+id/mytag"
+            android:layout_below="@+id/address">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape1"
+                android:gravity="center"
+                android:textColor="#FF5242"
+                android:layout_marginLeft="6dp"
+                android:text="2019秋学期"
+                />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape1"
+                android:gravity="center"
+                android:textColor="#FF5242"
+                android:layout_marginLeft="6dp"
+                android:text="10people" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/mytag">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="内容简介"
+                android:textColor="#000000"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/choice_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!--底部tab栏-->
+    <RadioGroup
+        android:id="@+id/choice_tab"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+        <!--为每个tab的图片和文字设置选择器-->
+
+        <RadioButton
+            android:id="@+id/tab_dislike"
+            style="@style/HomeTabButton"
+            android:background="#666666"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:text="不喜欢"
+            android:drawableLeft="@drawable/ic_dislike"/>
+
+        <RadioButton
+            android:id="@+id/tab_postinfo"
+            style="@style/HomeTabButton"
+            android:background="#FC7800"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:text="在线咨询"
+            android:drawableLeft="@drawable/ic_call"/>
+
+        <RadioButton
+            android:id="@+id/tab_my"
+            style="@style/HomeTabButton"
+            android:background="#FF5242"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:text="参加面试"
+            android:drawableLeft="@drawable/ic_interview"/>
+    </RadioGroup>
+</RelativeLayout>

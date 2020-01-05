@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <RelativeLayout
+        android:id="@+id/tablelist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:id="@+id/K1"
+            android:layout_below="@id/topbar"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/textview_border"/>
+        <TextView
+            android:id="@+id/zsxm"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="37dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="真实姓名："
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/hzsxm"
+            android:layout_alignBottom="@id/zsxm"
+            android:layout_marginLeft="130dp"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:hint="请填写您的真实姓名"
+            android:background="@null"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/K2"
+            android:layout_below="@id/K1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/textview_border"/>
+        <TextView
+            android:id="@+id/sjhm"
+            android:layout_below="@id/zsxm"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="手机号码："
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/hsjhm"
+            android:layout_alignBottom="@+id/sjhm"
+            android:layout_marginLeft="130dp"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:hint="请填写您的手机号码"
+            android:background="@null"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/K3"
+            android:layout_below="@id/K2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/textview_border"/>
+        <TextView
+            android:id="@+id/xb"
+            android:layout_below="@id/sjhm"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="性别："
+            android:textSize="20dp"/>
+        <Spinner
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:id="@+id/sex_spinner"
+            android:layout_alignBottom="@+id/xb"
+            android:layout_marginLeft="130dp"
+            android:entries="@array/spingarr"
+            />
+        <Button
+            android:id="@+id/modify_button"
+            android:layout_below="@id/xb"
+            android:layout_marginTop="50dp"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:text="修改"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:background="@color/theme"/>
+
+    </RelativeLayout>
+</LinearLayout>

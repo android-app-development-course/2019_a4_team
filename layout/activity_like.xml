@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_collecttitle"/>
+    <ImageView
+        android:id="@+id/Group_image1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/shenxy"
+        android:layout_below="@+id/topbar"/>
+
+
+    <TextView
+        android:id="@+id/Group_type"
+        android:text="实验室"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/Group_image1"
+        android:layout_alignBottom="@+id/Group_image1"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:textColor="#99FFFFFF"
+        android:textSize="26dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/GroupDetail"
+        android:layout_below="@+id/Group_image1">
+        <LinearLayout
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_name_24dp"
+                android:layout_marginLeft="6dp"/>
+
+            <TextView
+                android:id="@+id/Group_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="天梯赛"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/address"
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/name">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_place_24dp"
+                android:layout_marginLeft="6dp"/>
+
+            <TextView
+                android:id="@+id/Group_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="华南师范大学"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:id="@+id/mytag"
+            android:layout_below="@+id/address">
+
+            <TextView
+                android:id="@+id/Group_tag1"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/shape1"
+                android:gravity="center"
+                android:textColor="#FF5242"
+                android:text="2019"/>
+
+            <TextView
+                android:id="@+id/Group_tag2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/shape1"
+                android:gravity="center"
+                android:textColor="#FF5242"
+                android:text="3"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

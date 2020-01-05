@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginAssociation">
+    <include
+        android:id="@+id/include"
+        layout="@layout/top2" />
+
+    <Button
+        android:id="@+id/Back"
+        android:layout_width="85dp"
+        android:text="返回"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:layout_height="44dp"
+        android:background="@color/theme"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/ic_fanhui" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="3dp"
+        android:lineSpacingMultiplier="1.5"
+        android:scrollbars="vertical"
+        android:fadingEdge="vertical"
+        android:singleLine="false">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="【提示条款】\n 
+     为了更好地为您提供服务，请您仔细阅读《用户注册协议》（以下简称“本协议”）。在您开始使用“易组”软件及相关服务之前，请您务必认真阅读并充分理解本协议，特别是涉及免除或者限制责任的条款、权利许可和信息使用的条款、同意开通和使用特殊单项服务的条款、法律适用和争议解决条款等。当您按照注册页面提示填写信息、阅读并同意本协议且完成全部注册程序后，即表示您已充分阅读、理解并接受本协议的全部内容，承诺作为本协议的一方当事人接受协议的约束。阅读本协议的过程中，如果您不同意本协议或其中任何条款约定，您应立即停止注册程序。\n
+一、平台为您提供了注册通道，您有权选择合法的字符组合、邮箱或者手机号码作为自己的账户名称，并自行设置符合安全要求的密码。账户的所有权归公司所有，您仅拥有使用权。\n
+二、您设置的账户名称、密码是您用以登录并以注册用户身份使用平台提供的相关服务的凭证。您的账户只限您本人使用，未经平台书面同意，您不得以任何形式赠与、借用、出租、转让、售卖或以其他方式许可他人使用该账号。\n
+三、您有权设置并随时修改账户昵称、头像、个人简介等注册信息。但应保证您设置或修改的信息不得出现以下内容： \n
+（1）违反宪法或法律法规规定的；\n（2）危害国家安全，泄露国家机密；\n（3）散步谣言，扰乱社会秩序；\n（4）含有法律、行政法规禁止的其他内容的\n
+四、您有权在平台上自行浏览或者上传组队信息，但您评论、发布、传播时应自觉遵守宪法法律法规、遵守公共秩序、公民合法权益同时要保证您提供信息的真实性。若发现您发布或传播的内容违规，平台有权视具体情况采取冻结账号、限制部分功能、屏蔽或删除相关内容或直接删除账户等措施。"
+            android:textSize="24sp"/></ScrollView>
+</RelativeLayout>

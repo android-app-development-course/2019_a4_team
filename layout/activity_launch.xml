@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bears">
+
+    <com.example.myproject.CountdownCircleProgressBar
+        android:id="@+id/skipBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_start_page_circle"
+        app:circleColor="@color/colorPrimary"
+        app:circleWith="5dp" />
+
+</RelativeLayout>

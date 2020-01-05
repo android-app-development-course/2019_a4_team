@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="44dp"
+    android:layout_width="match_parent"
+    android:id="@+id/topbar"
+    android:background="@color/theme">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="详细情况"
+        android:textSize="20dp"
+        android:textColor="@color/white"/>
+    <Button
+        android:id="@+id/Return_button"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="7dp"
+        android:background="@color/theme"
+        android:drawablePadding="6dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:text="返回"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:drawableLeft="@drawable/ic_fanhui"
+        android:visibility="visible" />
+
+</RelativeLayout>

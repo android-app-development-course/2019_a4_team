@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".privacy">
+    <include
+        android:id="@+id/include"
+        layout="@layout/top5" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="85dp"
+        android:text="返回"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:layout_height="44dp"
+        android:background="@color/theme"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/ic_fanhui" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include"
+        android:layout_marginTop="30dp"
+        android:lineSpacingExtra="3dp"
+        android:lineSpacingMultiplier="1.5"
+        android:scrollbars="vertical"
+        android:fadingEdge="vertical"
+        android:singleLine="false">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="本软件尊重并保护所有使用服务用户的个人隐私权。为了给您提供更准确、更有个性化的服务，本软件不會收集及以任何形式儲存來自你社交網路的任何資訊或銷售給廣告或其它營運機構。本软件会不时更新本隐私权政策。您在同意本软件服务使用协议之时，即视为您已经同意本隐私权政策全部内容。本隐私权政策属于本软件服务使用协议不可分割的一部分。\n
+1.适用范围\n
+a)本软件是和硬件通过tcp及udp协议进行通信及视频传输，没有进行相关的网络请求服务，所以本软件并不会收集您的个人信息上传至服务器.\n
+b)在您使用本软件相关服务时，您需要允许使用相关的隐私服务，才可以更好使用本软件，例录音您需要允许打开麦克风才可以进行此功能使用；\n
+
+2.信息安全\n
+a)本软件不会以任何方式将您的数据上传至服务器。\n
+\n隐私政策条款 \n
+使用本App即表示您同意此隱私政策的條款和條件。如果您不同意本政策，請不要使用該App。我們保留權利，在我們決定更改，修改，增加或刪除本政策的部分，在任何時候。請定期瀏覽此網頁查閱任何修改。如果您繼續使用我們的App以後的任何更改這些條款的發布將意味著你已經接受了這些調整。
+" android:textSize="24sp"/></ScrollView>
+</RelativeLayout>
